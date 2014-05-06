@@ -49,17 +49,16 @@ a {
   color: white;
   text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 1px 1px 3px #000;
   min-height: 550px;
-}
-
-.phone, .right {
-  float: left;
+  position: relative;
 }
 
 .phone {
-  margin-top: 30px;
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
 .right {
-  min-width: 566px; /* 800px - width of image */
+  padding-left: 240px;
   padding-top: 22%;
 }
 
@@ -95,6 +94,8 @@ a {
 
 h1 {
     font-weight: 200;
+    line-height: 1.3em;
+    padding-bottom: 0.6em;
 }
 
 #footer-wrapper {
@@ -111,8 +112,48 @@ h1 {
 }
 
 p {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
+
+@media screen and (max-width: 800px) {
+  #main, #header, #top, #footer {
+    margin: auto;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .phone {
+    float: none;
+    position: relative;
+    display: block;
+    margin: auto;
+  }
+
+  .right {
+    padding-left: 0;
+  }
+
+  #header-wrapper {
+    background-image: none;
+    background-color: white;
+    padding-bottom: 40px;
+  }
+
+  .lede {
+    text-shadow: none;
+    color: #212d19;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -131,9 +172,11 @@ p {
 </div></div>
 
 <div id='main-wrapper'><div id='main'>
-    <p>WhatsApplebee's is the premier <a href="http://applebees.com">Applebee's</a>-based social network. Using our iPhone app, you can have anonymous conversations with other Applebee's patrons and brand advocates.</p>
+    <h1>WhatsApplebee's is the premier social network for fans of <a href="http://applebees.com">Applebee's</a>.</h1>
 
-    <p>Unlike other chain restaurant-based messaging services, WhatsApplebee's goes to great lengths to ensure that our users are true Applebee's fans. Using the iPhone's location services, WhatsApplebee's limits access to those currently inside an Applebee's restaurant inside the United States.</p>
+    <p>Using our iPhone app, you can have anonymous conversations with other Applebee's patrons and brand advocates.</p>
+
+    <p>Unlike other chain restaurant-based messaging services, WhatsApplebee's uses the iPhone's location services to limit access to those currently inside an Applebee's.</p>
     <a href="https://itunes.apple.com/us/app/whatsapplebees/id867011102" class='download'><img src="app-store.png" alt="Download on the iOS App Store"/></a>
 
 </div></div>
