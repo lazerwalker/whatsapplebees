@@ -1,32 +1,140 @@
 <html>
+<head>
+<meta charset="utf-8">
 <style>
 body {
+  background-color: #212d19;
+  color: #EEE;
   font-family: Helvetica neue;
   font-weight: 200;
-  line-height: 2em;
+  margin: 0;
 }
 
-p {
+a {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+}
+
+#main, #header, #top, #footer {
   margin: auto;
   width: 800px;
 }
+
+#top-wrapper {
+  background-color: #cb6000; /* #FF7900;*/
+  height: 80px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#top {
+  font-size: 35px;
+  font-weight: 100;
+  height: 100%;
+  line-height: 80px;
+  text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#header-wrapper {
+  background-image: url('./background.png');
+  background-size: 100% 100%;
+  margin-top: 80px;
+}
+
+#header {
+  color: white;
+  text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 1px 1px 3px #000;
+  min-height: 550px;
+}
+
+.phone, .right {
+  float: left;
+}
+
+.phone {
+  margin-top: 30px;
+}
+.right {
+  min-width: 566px; /* 800px - width of image */
+  padding-top: 22%;
+}
+
+.lede {
+  font-size: 2em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.icon {
+  height: 80px;
+  float: left;
+  margin-right: 5px;
+}
+
+.download {
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  width: 191px;
+}
+
+#main {
+  padding-top: 40px;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
 em {
   font-style: normal;
-  font-size: 2em;
-  padding-left: 3px;
-  padding-right: 3px;
+/*  font-size: 1.8em;*/
+/*  padding-left: 3px;*/
+/*  padding-right: 3px;*/
+}
+
+#footer-wrapper {
+  background-color: #cb6000; /* #FF7900;*/
+  height: 30px;
+  margin-top: 80px;
+}
+
+#footer {
+  font-size: 16px;
+  height: 100%;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.7);
 }
 </style>
-<head>
 </head>
 <body>
+<div id='top-wrapper'><div id='top'>
+  <img src="icon.png" class='icon'/> WhatsApplebee's
+</div></div>
+<div id='header-wrapper'>
+<div id='header'>
+  <img src='iphone.png' class='phone'/>
+  <div class='right'>
+    <div class='lede'>Connect. Communicate. Share.
+    <br/>
+  But Only At Applebee's.</div>
+    <a href="https://itunes.apple.com/us/app/whatsapplebees/id867011102" class='download'><img src="app-store.png" alt="Download on the iOS App Store"/></a>
+  </div>
+</div></div>
 
-  <p><em>Since ancient times,</em> sharing a meal has been one of humanity's most revered social rituals.<br/> To break bread with someone is <em>to communicate</em> and <em>to connect</em> with them in the most meaningful way.</p>
-
-  <p>Modern technology has <em>connected us</em> in ways we previously thought impossible, but we have yet to truly wed the power of the Internet with the <em>bonding qualities</em> of sharing a meal.</p>
+<div id='main'>
+  <p><em>Since ancient times,</em> sharing a meal has been one of humanity's most revered social rituals. To break bread with someone is <em>to communicate</em> and <em>to connect</em> with them. Modern technology has <em>connected us</em> in ways we previously thought impossible, but we had yet to truly wed the power of the Internet with this timeless social tradition.</p>
 
   <p><em>Until now.</em></p>
 
   <p><em>WhatsApplebee's</em> is the hottest new exclusive social network.</p>
+</div>
+
+<div id='footer-wrapper'><div id='footer'>
+A project by <a href="http://lazerwalker.com">Mike Lazer-Walker</a>.
+</div></div>
 </body>
 </html>
