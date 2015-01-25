@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotInApplebeesView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You're Not At Applebee's!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="2El-Cg-7qF">
+                    <rect key="frame" x="10" y="102" width="300" height="106"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="126" id="5GT-mP-MNF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-xE-fnh">
+                    <rect key="frame" x="20" y="20" width="46" height="30"/>
+                    <state key="normal" title="Toggle">
+                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapToggleButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="75I-DV-yxR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="To connect with other brand enthusiasts, you need to be inside an Applebee's restaurant." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tNl-Qw-bLL">
+                    <rect key="frame" x="20" y="247" width="280" height="108"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="dbj-SS-fOf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-zk-WdS">
+                    <rect key="frame" x="20" y="431" width="280" height="50"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.33725490196078434" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3FV-PE-xgX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Find Nearest Applebee's">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapLocateButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="yMW-mQ-piD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0075640496901018739" green="0.35693108974358978" blue="0.11928772534525514" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tNl-Qw-bLL" firstAttribute="top" secondItem="2El-Cg-7qF" secondAttribute="bottom" constant="25" id="8C5-y2-wqp"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EGG-zk-WdS" secondAttribute="bottom" constant="20" id="APJ-Jn-Ypt"/>
+                <constraint firstItem="EGG-zk-WdS" firstAttribute="leading" secondItem="tNl-Qw-bLL" secondAttribute="leading" id="NZS-bu-p2b"/>
+                <constraint firstAttribute="trailing" secondItem="tNl-Qw-bLL" secondAttribute="trailing" constant="20" id="ODd-YL-8UY"/>
+                <constraint firstItem="tNl-Qw-bLL" firstAttribute="trailing" secondItem="EGG-zk-WdS" secondAttribute="trailing" id="ZgY-Dz-SUD"/>
+                <constraint firstItem="tNl-Qw-bLL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZvO-Vn-HKk"/>
+                <constraint firstItem="EGG-zk-WdS" firstAttribute="top" relation="lessThanOrEqual" secondItem="tNl-Qw-bLL" secondAttribute="bottom" constant="80" id="eSl-LS-yEt"/>
+                <constraint firstItem="EGG-zk-WdS" firstAttribute="leading" secondItem="2El-Cg-7qF" secondAttribute="leading" constant="10" id="xaT-5s-IIi"/>
+                <constraint firstItem="tNl-Qw-bLL" firstAttribute="trailing" secondItem="2El-Cg-7qF" secondAttribute="trailing" constant="-10" id="ykM-8D-yoq"/>
+            </constraints>
+            <connections>
+                <outlet property="findButton" destination="EGG-zk-WdS" id="1B5-Zn-Ks4"/>
+                <outlet property="notInApplebeesLabel" destination="2El-Cg-7qF" id="CPf-YG-yqF"/>
+                <outlet property="toggleButton" destination="KbV-xE-fnh" id="WLI-vi-5G1"/>
+            </connections>
+        </view>
+    </objects>
+</document>

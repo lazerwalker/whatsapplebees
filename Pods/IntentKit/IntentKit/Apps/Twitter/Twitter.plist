@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Twitter</string>
+	<key>actions</key>
+	<dict>
+		<key>showTweetWithId:</key>
+		<string>twitter://status?id={{tweetId}}</string>
+		<key>showUserWithScreenName:</key>
+		<string>twitter://user?screen_name={{screenName}}</string>
+		<key>showUserWithId:</key>
+		<string>twitter://user?id={{userId}}</string>
+		<key>showTimeline</key>
+		<string>twitter://timeline</string>
+		<key>showMentions</key>
+		<string>twitter://mentions</string>
+		<key>showDirectMessages</key>
+		<string>twitter://connect</string>
+		<key>sendDirectMessageToScreenName:</key>
+		<string>twitter://messages?screen_name={{screenName}}</string>
+		<key>searchFor:</key>
+		<string>twitter://search?query={{query}}</string>
+		<key>tweetMessage:</key>
+		<string>twitter://post?message={{message}}</string>
+		<key>tweetMessage:inReplyTo:</key>
+		<string>twitter://post?message={{message}}&amp;in_reply_to_status_id={{replyId}}</string>
+	</dict>
+</dict>
+</plist>
