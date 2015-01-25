@@ -15,11 +15,11 @@ If you're looking for the source code to the site http://whatsapplebees.com, che
 
 3. Add your parse keys to the app using [cocoapods-keys](https://github.com/orta/cocoapods-keys)
 
-```
-$ gem install cocoapods-keys
-$ pod key set "parseAppID" "YOUR-APPID-HERE"
-$ pod key set "parseClientKey" "YOUR-KEY-HERE"
-```
+    ```sh
+    $ gem install cocoapods-keys
+    $ pod key set "parseAppID" "YOUR-APPID-HERE"
+    $ pod key set "parseClientKey" "YOUR-KEY-HERE"
+    ```
 
 4. Open `WhatsApplebees.xcworkspace` in Xcode. Build and run at your leisure!
 
