@@ -24,6 +24,11 @@ If you're looking for the source code to the site http://whatsapplebees.com, che
 4. Open `WhatsApplebees.xcworkspace` in Xcode. Build and run at your leisure!
 
 
+## Disclaimer
+
+This application was built in about a day, and is more of an art piece than a "serious" application. I may have open-sourced this codebase, but I wouldn't necessarily point to it as a shining example of Objective-C best practices.
+
+
 ## Contact
 
 Mike Lazer-Walker
