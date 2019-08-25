@@ -1,229 +1,281 @@
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<meta property="og:image" content="http://whatsapplebees.com/icon-1024.png"/>
-<meta property="og:title" content="WhatsApplebee's"/>
-<title>WhatsApplebee's · See You Tomorrow</title>
-<style>
-body {
-  background-color: #212d19;
-  color: #EEE;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 200;
-  margin: 0;
-}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta
+      property="og:image"
+      content="http://whatsapplebees.com/icon-1024.png"
+    />
+    <meta property="og:title" content="WhatsApplebee's" />
+    <title>WhatsApplebee's · See You Tomorrow</title>
+    <style>
+      body {
+        background-color: #212d19;
+        color: #eee;
+        font-family: Helvetica Neue, Helvetica, sans-serif;
+        font-weight: 200;
+        margin: 0;
+      }
 
-a {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-  color: white;
-  text-decoration: none;
-}
+      a {
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        color: white;
+        text-decoration: none;
+      }
 
-#main, #header, #top, #footer {
-  margin: auto;
-  width: 800px;
-}
+      #main,
+      #header,
+      #top,
+      #footer {
+        margin: auto;
+        width: 800px;
+      }
 
-#top-wrapper {
-  background-color: #cb6000; /* #FF7900;*/
-  height: 80px;
+      #top-wrapper {
+        background-color: #cb6000; /* #FF7900;*/
+        height: 80px;
 
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
 
-#top {
-  font-size: 35px;
-  font-weight: 100;
-  height: 100%;
-  line-height: 80px;
-  text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.7);
-}
+      #top {
+        font-size: 35px;
+        font-weight: 100;
+        height: 100%;
+        line-height: 80px;
+        text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.7);
+      }
 
-#header-wrapper {
-  background-image: url('./background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 80px;
-}
+      #header-wrapper {
+        background-image: url("./background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+      }
 
-#header {
-  color: white;
-  text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 1px 1px 3px #000;
-  min-height: 550px;
-  position: relative;
-}
+      #header {
+        color: white;
+        text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 1px 1px 3px #000;
+        min-height: 550px;
+        position: relative;
+      }
 
-.phone {
-  position: absolute;
-  top: 30px;
-  left: 0;
-}
-.right {
-  padding-left: 240px;
-  padding-top: 22%;
-}
+      .phone {
+        position: absolute;
+        top: 30px;
+        left: 0;
+      }
+      .right {
+        padding-left: 240px;
+        padding-top: 22%;
+      }
 
-.lede {
-  font-size: 2em;
-  line-height: 1.3em;
-  text-align: center;
-}
+      .lede {
+        font-size: 2em;
+        line-height: 1.3em;
+        text-align: center;
+      }
 
-.icon {
-  height: 80px;
-  float: left;
-  margin-right: 5px;
-}
+      .icon {
+        height: 80px;
+        float: left;
+        margin-right: 5px;
+      }
 
-.download {
-  border: 0;
-  margin: auto;
-  margin-top: 40px;
-  display: block;
-  width: 191px;
-}
+      .download {
+        border: 0;
+        margin: auto;
+        margin-top: 40px;
+        display: block;
+        width: 191px;
+      }
 
-#main-wrapper {
-  background-color: #212d19;
-}
-#main {
-  background-color: #212d19;
-  padding-top: 40px;
-  font-size: 1.4em;
-  line-height: 2em;
-}
+      #main-wrapper {
+        background-color: #212d19;
+      }
+      #main {
+        background-color: #212d19;
+        padding-top: 40px;
+        font-size: 1.4em;
+        line-height: 2em;
+      }
 
-h1 {
-    font-size: 1.6em;
-    font-weight: 200;
-    line-height: 1.6em;
-    padding-bottom: 0.6em;
-}
+      h1 {
+        font-size: 1.6em;
+        font-weight: 200;
+        line-height: 1.6em;
+        padding-bottom: 0.6em;
+      }
 
-#footer-wrapper {
-  background-color: #cb6000; /* #FF7900;*/
-  height: 40px;
-}
+      #footer-wrapper {
+        background-color: #cb6000; /* #FF7900;*/
+        height: 40px;
+      }
 
-#footer {
-  font-size: 16px;
-  height: 100%;
-  line-height: 40px;
-  text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.7);
-}
+      #footer {
+        font-size: 16px;
+        height: 100%;
+        line-height: 40px;
+        text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.7);
+      }
 
-.disclaimer {
-  font-size: 0.5em;
-  line-height: 20px;
-  padding-top: 80px;
-}
+      .disclaimer {
+        font-size: 0.5em;
+        line-height: 20px;
+        padding-top: 80px;
+      }
 
-p {
-  padding-bottom: 0.5em;
-}
+      p {
+        padding-bottom: 0.5em;
+      }
 
-@media screen and (max-width: 800px) {
-  #main, #header, #top, #footer {
-    margin: auto;
-    width: 90%;
-  }
+      @media screen and (max-width: 800px) {
+        #main,
+        #header,
+        #top,
+        #footer {
+          margin: auto;
+          width: 90%;
+        }
 
-  h1 {
-    font-size: 1.6em;
-  }
-}
+        h1 {
+          font-size: 1.6em;
+        }
+      }
 
-@media screen and (max-width: 500px) {
-  #top {
-    width: 100% !important;
-    font-size: 1.8em;
-  }
+      @media screen and (max-width: 500px) {
+        #top {
+          width: 100% !important;
+          font-size: 1.8em;
+        }
 
-  .phone {
-    float: none;
-    position: relative;
-    display: block;
-    margin: auto;
-  }
+        .phone {
+          float: none;
+          position: relative;
+          display: block;
+          margin: auto;
+        }
 
-  .right {
-    padding-left: 0;
-  }
+        .right {
+          padding-left: 0;
+        }
 
-  #header-wrapper {
-    background-image: none;
-    background-color: white;
-    padding-bottom: 40px;
-  }
+        #header-wrapper {
+          background-image: none;
+          background-color: white;
+          padding-bottom: 40px;
+        }
 
-  .lede {
-    text-shadow: none;
-    color: #212d19;
-  }
+        .lede {
+          text-shadow: none;
+          color: #212d19;
+        }
 
-  h1 {
-    font-size: 1.4em;
-  }
-}
+        h1 {
+          font-size: 1.4em;
+        }
+      }
 
-@media screen and (min-width: 1600px) {
-  #header {
-    box-sizing: border-box;
-    min-height: 650px;
-    padding-top: 50px;
-  }
+      @media screen and (min-width: 1600px) {
+        #header {
+          box-sizing: border-box;
+          min-height: 650px;
+          padding-top: 50px;
+        }
 
-  .phone {
-    top: 75px;
-  }
-}
+        .phone {
+          top: 75px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top-wrapper">
+      <div id="top"><img src="icon.png" class="icon" /> WhatsApplebee's</div>
+    </div>
+    <div id="header-wrapper">
+      <div id="header">
+        <img src="iphone.png" class="phone" />
+        <div class="right">
+          <div class="lede">
+            Connect. Share. Communicate.
+            <br />
+            But Only At Applebee's<sup>®</sup>.
+          </div>
+          <a
+            href="https://itunes.apple.com/us/app/whatsapplebees/id867011102"
+            class="download"
+            ><img src="app-store.png" alt="Download on the iOS App Store"
+          /></a>
+        </div>
+      </div>
+    </div>
 
-</style>
-</head>
-<body>
-<div id='top-wrapper'><div id='top'>
-  <img src="icon.png" class='icon'/> WhatsApplebee's
-</div></div>
-<div id='header-wrapper'>
-<div id='header'>
-  <img src='iphone.png' class='phone'/>
-  <div class='right'>
-    <div class='lede'>Connect. Share. Communicate.
-    <br/>
-  But Only At Applebee's<sup>®</sup>.</div>
-    <a href="https://itunes.apple.com/us/app/whatsapplebees/id867011102" class='download'><img src="app-store.png" alt="Download on the iOS App Store"/></a>
-  </div>
-</div></div>
+    <div id="main-wrapper">
+      <div id="main">
+        <h1>
+          WhatsApplebee's is the premier social chat app for fans of
+          <a href="http://applebees.com">Applebee's<sup>®</sup></a
+          >.
+        </h1>
 
-<div id='main-wrapper'><div id='main'>
-    <h1>WhatsApplebee's is the premier social chat app for fans of <a href="http://applebees.com">Applebee's<sup>®</sup></a>.</h1>
+        <p>
+          Using our iPhone app, you can have anonymous conversations with other
+          Applebee's patrons and brand advocates.
+        </p>
 
-    <p>Using our iPhone app, you can have anonymous conversations with other Applebee's patrons and brand advocates.</p>
+        <p>
+          WhatsApplebee's uses iPhone location services to limit access to those
+          currently inside an Applebee's. We enforce this strictly, unlike other
+          chain restaurant-based messaging services such as T.G.I. Friendster or
+          Olive Grindr.
+        </p>
+        <a
+          href="https://itunes.apple.com/us/app/whatsapplebees/id867011102"
+          class="download"
+          ><img src="app-store.png" alt="Download on the iOS App Store"
+        /></a>
 
-    <p>WhatsApplebee's uses iPhone location services to limit access to those currently inside an Applebee's. We enforce this strictly, unlike other chain restaurant-based messaging services such as T.G.I. Friendster or Olive Grindr.</p>
-    <a href="https://itunes.apple.com/us/app/whatsapplebees/id867011102" class='download'><img src="app-store.png" alt="Download on the iOS App Store"/></a>
+        <div class="disclaimer">
+          This website and the WhatsApplebees application are independently
+          owned and operated by Em Lazer-Walker. Applebee’s International, Inc.
+          and its affiliates are not responsible for the content on this website
+          or on the WhatsApplebees application.
+        </div>
+      </div>
+    </div>
 
-<div class='disclaimer'>This website and the WhatsApplebees application are independently owned and operated by Mike Lazer-Walker. Applebee’s International, Inc. and its affiliates are not responsible for the content on this website or on the WhatsApplebees application.</div>
+    <div id="footer-wrapper">
+      <div id="footer">
+        A project by <a href="http://lazerwalker.com">Em Lazer-Walker</a>.
+      </div>
+    </div>
+  </body>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function() {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
 
-</div>
-</div>
-
-<div id='footer-wrapper'><div id='footer'>
-A project by <a href="http://lazerwalker.com">Mike Lazer-Walker</a>.
-</div></div>
-</body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50720724-1', 'whatsapplebees.com');
-  ga('send', 'pageview');
-
-</script>
+    ga("create", "UA-50720724-1", "whatsapplebees.com");
+    ga("send", "pageview");
+  </script>
 </html>
