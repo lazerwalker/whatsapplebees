@@ -6,7 +6,6 @@ The code included here is the full application as it exists on the [app store](h
 
 If you're looking for the source code to the site http://whatsapplebees.com, check out the [gh-pages branch](https://github.com/lazerwalker/whatsapplebees/tree/gh-pages).
 
-
 ## Setup
 
 1. Clone this repo.
@@ -15,28 +14,25 @@ If you're looking for the source code to the site http://whatsapplebees.com, che
 
 3. Add your parse keys to the app using [cocoapods-keys](https://github.com/orta/cocoapods-keys)
 
-    ```sh
-    $ gem install cocoapods-keys
-    $ pod key set "parseAppID" "YOUR-APPID-HERE"
-    $ pod key set "parseClientKey" "YOUR-KEY-HERE"
-    ```
+   ```sh
+   $ gem install cocoapods-keys
+   $ pod key set "parseAppID" "YOUR-APPID-HERE"
+   $ pod key set "parseClientKey" "YOUR-KEY-HERE"
+   ```
 
 4. Open `WhatsApplebees.xcworkspace` in Xcode. Build and run at your leisure!
-
 
 ## Disclaimer
 
 This application was built in about a day, and is more of an art piece than a "serious" application. I may have open-sourced this codebase, but I wouldn't necessarily point to it as a shining example of Objective-C best practices.
 
-
 ## Contact
 
-Mike Lazer-Walker
+Em Lazer-Walker
 
 - https://github.com/lazerwalker
 - [@lazerwalker](http://twitter.com/lazerwalker)
 - http://lazerwalker.com
-
 
 ## License
 
